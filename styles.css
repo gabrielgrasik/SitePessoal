@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1227;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #00d9ff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00d9ff;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00d9ff;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.skill-box, .portfolio-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill, .project {
+    background-color: #151516;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.skill h3, .project h3 {
+    margin-bottom: 10px;
+    color: #00d9ff;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .skill-box, .portfolio-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
